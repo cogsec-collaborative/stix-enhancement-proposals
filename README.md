@@ -31,3 +31,6 @@ versus STIX Patterning extensions.
 Super, good for you! But for that idea to translate into reality,
 you have to educate your fellow TC participants, recruit co-sponsors
 to help with the work, and gradually build consensus. 
+
+# How to manage a STIX2 SDO extension
+1. Clone this repository, 
