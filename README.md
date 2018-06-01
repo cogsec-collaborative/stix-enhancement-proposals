@@ -36,8 +36,8 @@ to help with the work, and gradually build consensus.
 1. Clone this repository.
 2. Give your extension a name and create a corresponding directory
    within `extensions/sdos/`.
-3. Copy templates/sdo_extension_template/template.md and
-   templates/sdo_extension_template/template.json into the directory
+3. Copy `templates/sdo_extension_template/template.md` and
+   `templates/sdo_extension_template/template.json` into the directory
    you just created (s/template/your extension name).
 4. Start by filling out as much as you can of <your extension name>.md.
 5. Ping the CTI TC on #general, let folks know what you're working on
