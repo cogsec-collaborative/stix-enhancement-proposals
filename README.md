@@ -33,4 +33,17 @@ you have to educate your fellow TC participants, recruit co-sponsors
 to help with the work, and gradually build consensus. 
 
 # How to manage a STIX2 SDO extension
-1. Clone this repository, 
+1. Clone this repository.
+2. Give your extension a name and create a corresponding directory
+   within `extensions/sdos/`.
+3. Copy templates/sdo_extension_template/template.md and
+   templates/sdo_extension_template/template.json into the directory
+   you just created (s/template/your extension name).
+4. Start by filling out as much as you can of <your extension name>.md.
+5. Ping the CTI TC on #general, let folks know what you're working on
+   and where to find it.
+6. Create a dedicate CTI TC Slack channel for collaboration.
+7. Define the object's schema in <your extension name>.json
+8. Rinse and repeat on Slack and minigroup working calls until you
+   feel the work is ready to be presented to the wider CTI TC.
+9. ...profit!
