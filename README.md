@@ -46,4 +46,6 @@ to help with the work, and gradually build consensus.
 7. Define the object's schema in <your extension name>.json
 8. Rinse and repeat on Slack and minigroup working calls until you
    feel the work is ready to be presented to the wider CTI TC.
-9. ...profit!
+9. Barring substantive objections by the CTI TC, do a pull request
+   against this git repo.
+10. ...profit!
