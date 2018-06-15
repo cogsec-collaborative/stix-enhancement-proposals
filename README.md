@@ -9,7 +9,7 @@ bleeding-edge stuff in an interoperable manner without degrading the
 ecosystem of production tools that only expect CS/CSD level inputs.
 
 It's not just enough having a great idea. For that idea to translate
-into reality, you have to educate your fellow TC participants, recruit
+into reality, you have to educate potential supporters, recruit
 co-sponsors to help with the work, and gradually build consensus. This
 process aims to make that easier.
 
@@ -35,6 +35,8 @@ vendor-specific implementations they are not interoperable.
 	* It's unclear how this would work with Patterning if you're
       trying to match against a SEP-defined property within an
       existing object.
+  * Really, named sets of custom properties are semantically
+    equivalent to SCO Extensions. Should just refer to them thusly.
 
 # SEPs for new SDOs
 1. Fork this repository.
@@ -44,8 +46,8 @@ vendor-specific implementations they are not interoperable.
    `templates/sdo_sep_template/template.json` into the directory
    you just created (s/template/your SEP name).
 4. Start by filling out as much as you can of <your SEP name>.md.
-5. Ping the CTI TC on #general, let folks know what you're working on
-   and where to find it.
+5. Ping the CTI TC via Slack on the #general channel to let folks know
+   what you're working on and where to find it.
 6. Create a dedicate CTI TC Slack channel for collaboration.
 7. Define the object's schema in <your SEP name>.json
 8. Rinse and repeat on Slack and minigroup working calls until you
@@ -68,13 +70,18 @@ commit SHA1 hash).
 
 # SEP statuses
 * `draft`: for immature/bleeding-edge SEPs
-* `active`: for SEPs that are actually in production use and done enough to be debated for inclusion in a CSD
+* `active`: for SEPs that are actually in production use and done
+  enough to be debated for inclusion in a CSD
 * `deprecated`: for SEPs which have been EOL'ed or withdrawn
 
 # TODO
 - [ ] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)
-- [ ] figure out how to handle SEPs that add new properties or sets of properties to existing SDOs and SCOs
+- [ ] figure out how to handle SEPs that add new properties or sets of
+      properties to existing SDOs and SCOs
 - [ ] talk through the draft, active, and deprecated statuses - does
       the minigroup/bleeding-edge work happen in `draft` on a fork,
       then get merged into `active` upon PR or is there a more formal
       review process?
+- [ ] what about non-TC members - if they all sign the CLA and do a
+      PR, can we incorporate their work into a CSD?
+- [ ] add workflow diagram
