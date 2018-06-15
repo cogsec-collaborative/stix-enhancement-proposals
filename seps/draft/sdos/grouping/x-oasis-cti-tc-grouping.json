@@ -43,9 +43,7 @@ creator wishes to treat as a distinct entity with shared context.",
             "$ref": "../../../../cti-stix2-json-schemas/schemas/common/identifier.json"
           },
           "minItems": 1
-          },
-          "minItems": 1
-        },
+        }
       }
     }
   ],
