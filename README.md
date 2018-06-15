@@ -5,9 +5,14 @@ For mocking up how STIX2 extensions will work.
 ## tl;dr
 The goal of the STIX2 Extension Process is to establish a mechanism
 for folks to suggest their ideas in a common structure, recruit others
-to help with the effort, and iterate on bleeding-edge stuff in an
-interoperable manner without degrading the ecosystem of production
-tools that only expect CS/CSD level inputs.
+to help, and iterate on bleeding-edge stuff in an interoperable manner
+without degrading the ecosystem of production tools that only expect
+CS/CSD level inputs.
+
+It's not just enough having a great idea. For that idea to translate
+into reality, you have to educate your fellow TC participants, recruit
+co-sponsors to help with the work, and gradually build consensus. This
+process aims to make that easier.
 
 ## Background
 Things can move pretty slowly in a consensus-based standards body and
@@ -20,21 +25,10 @@ specifications to be finalized. STIX2 supports for custom objects and
 properties, but while these are sufficient to address the needs of
 vendor-specific implementations they are not interoperable.
 
- 
 
-<!-- # STIX2 as a data model is qualitatively different from STIX Patterning as a language
-Dealing with STIX2 extensions that add new SDOs or modify the
-semantics of existing ones can be shoehorned into STIX2's existing
-support for custom objects. By contrast, STIX Patterning is a
-_language_. You can't just jam new stuff into
-Patterning. Bleeding-edge Patterning must maintain semantic
-coherence. So we'll take different approaches for STIX2 extensions
-versus STIX Patterning extensions. -->
-
-# So the good idea fairy left a gem on your pillow last night?
-Super, good for you! But for that idea to translate into reality,
-you have to educate your fellow TC participants, recruit co-sponsors
-to help with the work, and gradually build consensus.
+# Scope
+* Defining new STIX SDOs as Extensions
+* Defining new STIX Cyber Observables (SCOs) as Extensions
 
 # STIX2 SDO extension process
 1. Clone this repository.
@@ -55,12 +49,18 @@ to help with the work, and gradually build consensus.
 10. ...profit!
 
 
-WIP
+<!-- WIP
 ===
 STIX SDOs and SCOs
 ------------------
 * adding a new one
 * adding functionality to an existing one
-* deprecation via the extension process is forbidden
-
 * spec_version tied sha commit hash of github json schema
+# STIX2 as a data model is qualitatively different from STIX Patterning as a language
+Dealing with STIX2 extensions that add new SDOs or modify the
+semantics of existing ones can be shoehorned into STIX2's existing
+support for custom objects. By contrast, STIX Patterning is a
+_language_. You can't just jam new stuff into
+Patterning. Bleeding-edge Patterning must maintain semantic
+coherence. So we'll take different approaches for STIX2 extensions
+versus STIX Patterning extensions. -->
