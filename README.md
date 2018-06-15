@@ -37,7 +37,7 @@ vendor-specific implementations they are not interoperable.
       existing object.
 
 # SEPs for new SDOs
-1. Clone this repository.
+1. Fork this repository.
 2. Give your SEP a name and create a corresponding directory
    within `seps/draft/sdos/`.
 3. Copy `templates/sdo_sep_template/template.md` and
