@@ -30,7 +30,7 @@ creator wishes to treat as a distinct entity with shared context.",
         },
         "context": {
           "type": "array",
-          "description": "A description that provides more details and context about the Grouping, potentially including its purpose and its key characteristics. This is an open vocabulary and values **SHOULD** come from the `grouping-context-ov` vocabulary."
+            "description": "A description that provides more details and context about the Grouping, potentially including its purpose and its key characteristics. This is an open vocabulary and values **SHOULD** come from the `grouping-context-ov` vocabulary.",
           "items": {
             "type": "string"
           },
