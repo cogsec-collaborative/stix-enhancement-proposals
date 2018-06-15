@@ -1,13 +1,12 @@
-# stix-extensions-demo
-For mocking up how STIX2 extensions will work.
+# STIX Enhancement Proposals (SEPs)
+For demonstrating how SEPs might work.
 
 # What is the problem we're trying to solve?
 ## tl;dr
-The goal of the STIX2 Extension Process is to establish a mechanism
-for folks to suggest their ideas in a common structure, recruit others
-to help, and iterate on bleeding-edge stuff in an interoperable manner
-without degrading the ecosystem of production tools that only expect
-CS/CSD level inputs.
+SEPs are intended to establish a mechanism for folks to suggest their
+ideas in a common structure, recruit others to help, and iterate on
+bleeding-edge stuff in an interoperable manner without degrading the
+ecosystem of production tools that only expect CS/CSD level inputs.
 
 It's not just enough having a great idea. For that idea to translate
 into reality, you have to educate your fellow TC participants, recruit
@@ -25,23 +24,30 @@ specifications to be finalized. STIX2 supports for custom objects and
 properties, but while these are sufficient to address the needs of
 vendor-specific implementations they are not interoperable.
 
-
 # Scope
-* Defining new STIX SDOs as Extensions
-* Defining new STIX Cyber Observables (SCOs) as Extensions
+* Defining new STIX SDOs as SEPs
+* Defining new STIX Cyber Observables (SCOs) as SEPs
+* Defining named sets of custom properties to add functionality to
+  existing STIX SDOs and SCOs (as in, specified in a CSD or CS) as
+  SEPs
+  * In the context of SCOs this will must align with the concept of
+    Custom Observable Extensions defined in STIX 2.0, Part 3.
+	* It's unclear how this would work with Patterning if you're
+      trying to match against a SEP-defined property within an
+      existing object.
 
-# STIX2 SDO extension process
+# SEPs for new SDOs
 1. Clone this repository.
-2. Give your extension a name and create a corresponding directory
-   within `extensions/sdos/`.
-3. Copy `templates/sdo_extension_template/template.md` and
-   `templates/sdo_extension_template/template.json` into the directory
-   you just created (s/template/your extension name).
-4. Start by filling out as much as you can of <your extension name>.md.
+2. Give your SEP a name and create a corresponding directory
+   within `seps/sdos/`.
+3. Copy `templates/sdo_sep_template/template.md` and
+   `templates/sdo_sep_template/template.json` into the directory
+   you just created (s/template/your SEP name).
+4. Start by filling out as much as you can of <your SEP name>.md.
 5. Ping the CTI TC on #general, let folks know what you're working on
    and where to find it.
 6. Create a dedicate CTI TC Slack channel for collaboration.
-7. Define the object's schema in <your extension name>.json
+7. Define the object's schema in <your SEP name>.json
 8. Rinse and repeat on Slack and minigroup working calls until you
    feel the work is ready to be presented to the wider CTI TC.
 9. Barring substantive objections by the CTI TC, do a pull request
