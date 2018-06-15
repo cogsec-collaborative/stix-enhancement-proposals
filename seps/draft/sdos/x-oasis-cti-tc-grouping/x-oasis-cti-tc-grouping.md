@@ -71,7 +71,7 @@ information contained in the Grouping relates to a suspicious event.
 | `unspecified`         | A set of STIX content contextually related but without any precise characterization of the contextual relationship between the objects. |
 |                       |                                                                                                                                         |
 
-##### Grouping Label
+#### Grouping Label
 **Vocabulary Name:** `grouping-label-ov`
 
 While the majority of this vocabulary is undefined (producers may use
