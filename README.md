@@ -39,7 +39,7 @@ vendor-specific implementations they are not interoperable.
 # SEPs for new SDOs
 1. Clone this repository.
 2. Give your SEP a name and create a corresponding directory
-   within `seps/sdos/`.
+   within `seps/draft/sdos/`.
 3. Copy `templates/sdo_sep_template/template.md` and
    `templates/sdo_sep_template/template.json` into the directory
    you just created (s/template/your SEP name).
@@ -54,19 +54,19 @@ vendor-specific implementations they are not interoperable.
    against this git repo.
 10. ...profit!
 
+## An example, plus how the hell this is supposed to work...
+If you look under `seps/draft/sdos/x-oasis-cti-tc-grouping/` you'll
+see the Grouping proposal (taken from the STIX 2.1-Working Concepts
+Google Doc) defined as a SEP. There's Markdown (for the humans) and
+JSON Schema (for the machines.)
 
-<!-- WIP
-===
-STIX SDOs and SCOs
-------------------
-* adding a new one
-* adding functionality to an existing one
-* spec_version tied sha commit hash of github json schema
-# STIX2 as a data model is qualitatively different from STIX Patterning as a language
-Dealing with STIX2 extensions that add new SDOs or modify the
-semantics of existing ones can be shoehorned into STIX2's existing
-support for custom objects. By contrast, STIX Patterning is a
-_language_. You can't just jam new stuff into
-Patterning. Bleeding-edge Patterning must maintain semantic
-coherence. So we'll take different approaches for STIX2 extensions
-versus STIX Patterning extensions. -->
+The idea is that if you receive a custom object prefixed with
+`x-oasis-cti-tc-*`, then you know to look in `manifest.md` to figure
+out what type of SEP it is, where to find the associate descriptive
+text and schema, as well as the latest version (based on the git
+commit SHA1 hash).
+
+# TODO
+- [ ] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)
+- [ ] figure out how to handle SEPs that add new properties or sets of properties to existing SDOs and SCOs
+- [ ] talk through the draft, active, and deprecated statuses
