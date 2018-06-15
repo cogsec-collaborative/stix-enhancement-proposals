@@ -20,8 +20,8 @@ new ideas in STIX2 is that the technical committee's risk appetite has
 shifted towards demanding a higher level of vetting before changes get
 pulled into the formal work process. Meanwhile there are folks trying
 to tackle real-world problems who can't wait on changes to the formal
-specifications to be finalized. STIX2 supports for custom objects and
-properties, but while these are sufficient to address the needs of
+specifications to be finalized. STIX2 has support for custom objects
+and properties, but while these are sufficient to address the needs of
 vendor-specific implementations they are not interoperable.
 
 # Scope
@@ -66,7 +66,15 @@ out what type of SEP it is, where to find the associate descriptive
 text and schema, as well as the latest version (based on the git
 commit SHA1 hash).
 
+# SEP statuses
+* `draft`: for immature/bleeding-edge SEPs
+* `active`: for SEPs that are actually in production use and done enough to be debated for inclusion in a CSD
+* `deprecated`: for SEPs which have been EOL'ed or withdrawn
+
 # TODO
 - [ ] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)
 - [ ] figure out how to handle SEPs that add new properties or sets of properties to existing SDOs and SCOs
-- [ ] talk through the draft, active, and deprecated statuses
+- [ ] talk through the draft, active, and deprecated statuses - does
+      the minigroup/bleeding-edge work happen in `draft` on a fork,
+      then get merged into `active` upon PR or is there a more formal
+      review process?
