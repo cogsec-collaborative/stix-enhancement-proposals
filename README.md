@@ -25,22 +25,22 @@ and properties, but while these are sufficient to address the needs of
 vendor-specific implementations they are not interoperable.
 
 ## Definitions
-* **SDO:** STIX Domain Object, used to characterize CTI as nodes in the STIX graph model. 
-* **SCO:** STIX Cyber Observable, used to characterize observations within a STIX Observed Data SDO.
+* **SDO:** STIX Domain Object, used to characterize CTI as nodes in
+  the STIX graph model.
+* **SCO:** STIX Cyber Observable, used to characterize observations
+  within a STIX Observed Data SDO.
+* **STIX Extensions:** STIX Extensions define coherent sets of
+  properties to add additional capabilities to SDOs or SCOs. These may
+  be logically constrained to certain SDO or SCO types where
+  semantically it would be nonsensical outside a limited context. For
+  example, using the SCO HTTP Request Extension makes sense in the
+  context of a Network Traffic SCO, but would not in the case of a
+  File SCO.
 
 # Scope
 * [Defining new STIX SDOs as SEPs](#seps-for-new-sdos)
 * [Defining new STIX Cyber Observables (SCOs) as SEPs](#seps-for-new-scos)
-* Defining named sets of custom properties to add functionality to
-  existing STIX SDOs and SCOs (as in, specified in a CSD or CS) as
-  SEPs
-  * In the context of SCOs this will must align with the concept of
-    Custom Observable Extensions defined in STIX 2.0, Part 3.
-	* It's unclear how this would work with Patterning if you're
-      trying to match against a SEP-defined property within an
-      existing object.
-  * Really, named sets of custom properties are semantically
-    equivalent to SCO Extensions. Should just refer to them thusly.
+* [Defining new STIX Extensions](#seps-for-new-extensions)
 
 # SEPs for new SDOs
 1. Fork this repository.
@@ -89,6 +89,9 @@ If you look under `seps/draft/scos/x-oasis-cti-tc-webpage/` you'll see
 the Webpage proposal (based on Terry MacDonald's proposal to the TC
 mailing list) defined as a SEP. There's Markdown (for the humans) and
 JSON Schema (for the machines.)
+
+# SEPs for new Extensions
+* [TODO]
 
 # The SEP registry
 The idea is that if you receive a custom object prefixed with
