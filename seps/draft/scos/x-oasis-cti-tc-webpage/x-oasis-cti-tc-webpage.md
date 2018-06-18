@@ -94,83 +94,85 @@ this can be achieved by referencing an Artifact SCO via the
 #### Multiple chained exploit site redirects
 ```json
 {
-    "0": {
-        "type": "url",
-        "value": "https://wayneindustries.com/research/index.html"
-    },
-    "1": {
-        "type": "x-oasis-cti-tc-webpage",
-        "url_ref" "0",
-        "body": [
-            "&lt;iframe src=\\"http://exssredaf.intsite.info/content/lfw?327xas\\"&gt;"
-        ],
-        "redirects_to_ref": "2"
-    },
-    "2": {
-        "type": "url",
-        "value": "http://exssredaf.intsite.info/content/lfw?327xas"
-    },
-    "3": {
-        "type": "x-oasis-cti-tc-webpage",
-        "url_ref" "2",
-        "body": [
-            "&lt;script src=\\"http://389553.teaparty2.biz/uploads/j.jpg\\"&gt;"
-    	],
-        "loads\_content\_from\_refs": \["4"\]
-    },
-    "4": {
-        "type": "url",
-        "value": "http://389553.teaparty2.biz/uploads/j.jpg"
-    },
-    "5": {
-        "type": "x-oasis-cti-tc-webpage",
-        "url_ref" "2",
-        "body": [
-            "&lt;script&gt; eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d\[c\]=k\[c\]||c}k=\[function(e){return d\[e\]}\];e=function(){return'\\\\w+'};c=1};while(c--){if(k\[c\]){p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k\[c\])}}return p}('1 0="2 3!";4(0);',5,5,'thing|var|Hello|World|alert'.split('|'),0,{})) &lt;/script&gt;"
-        ]
-    }
+	"0": {
+		"type": "url",
+		"value": "https://wayneindustries.com/research/index.html"
+	},
+	"1": {
+		"type": "x-oasis-cti-tc-webpage",
+		"url_ref": "0",
+		"body": [
+			"&lt;iframe src=\"http://exssredaf.intsite.info/content/lfw?327xas\"&gt;"
+		],
+		"redirects_to_ref": "2"
+	},
+	"2": {
+		"type": "url",
+		"value": "http://exssredaf.intsite.info/content/lfw?327xas"
+	},
+	"3": {
+		"type": "x-oasis-cti-tc-webpage",
+		"url_ref": "2",
+		"body": [
+			"&lt;script src=\"http://389553.teaparty2.biz/uploads/j.jpg\"&gt;"
+		],
+		"loads_content_from_refs": ["4"]
+	},
+	"4": {
+		"type": "url",
+		"value": "http://389553.teaparty2.biz/uploads/j.jpg"
+	},
+	"5": {
+		"type": "x-oasis-cti-tc-webpage",
+		"url_ref": "2",
+		"body": [
+			"&lt;script&gt; eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1 0=\"2 3!\";4(0);',5,5,'thing|var|Hello|World|alert'.split('|'),0,{})) &lt;/script&gt;"
+		]
+	}
 }
 ```
 
 #### Recording Forum Posts on Website (including the HTTP request)
 ```json
 {
-    "0": {
-        "type": "domain-name",
-        "value": "wayneindustries.com"
-    },
-    "1": {
-        "type": "network-traffic",
-        "dst_ref": "0",
-        "protocols": [
-            "tcp",
-            "http"
-        ],
-        "extensions": {
-            "http-request-ext": {
-                "request_method": "get",
-                "request_value": "/research/index.html",
-                "request_version": "http/1.1",
-                "request_header": {
-                    "Accept-Encoding": "gzip,deflate",
-                    "User-Agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/20040113",
-                    "Host": "wayneindustries.com"
-                },
-            "message_webpage_ref": "2"
-            }
+	"0": {
+		"type": "domain-name",
+		"value": "wayneindustries.com"
+	},
+	"1": {
+		"type": "network-traffic",
+		"dst_ref": "0",
+		"protocols": [
+			"tcp",
+			"http"
+		],
+		"extensions": {
+			"http-request-ext": {
+				"request_method": "get",
+				"request_value": "/research/index.html",
+				"request_version": "http/1.1",
+				"request_header": {
+					"Accept-Encoding": "gzip,deflate",
+					"User-Agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/20040113",
+					"Host": "wayneindustries.com"
+				},
+				"message_webpage_ref": "2"
+			}
 		}
 	},
-    "2": {
-        "type": "x-oasis-cti-tc-webpage",
-        "url_ref" "3",
-        "body": [
-        "&lt;div class=\\"highlight\\"&gt;I hack3d the Internetz and no 1 will get me eva.&lt;/div&gt;",
-        "&lt;div class=\\"highlight\\"&gt;I've managed to get into the CIA man!&lt;/div&gt;",
-        ]
-    },
-    "3": {
-        "type": "url",
-        "value": "https://wayneindustries.com/research/index.html"
-    }
+	"2": {
+		"type": "x-oasis-cti-tc-webpage",
+		"url_ref": "3",
+		"body": [
+			"&lt;div class=\"highlight\"&gt;I hack3d the Internetz and no 1 will get me eva.&lt;/div&gt;",
+			"&lt;div class=\"highlight\"&gt;I've managed to get into the CIA man!&lt;/div&gt;"
+		]
+	},
+	"3": {
+		"type": "url",
+		"value": "https://wayneindustries.com/research/index.html"
+	}
 }
 ```
+
+### STIX Patterning Examples
