@@ -91,7 +91,10 @@ mailing list) defined as a SEP. There's Markdown (for the humans) and
 JSON Schema (for the machines.)
 
 # SEPs for new Extensions
-* [TODO]
+* [TODO] create example of an SCO Extension for Terry MacDonald's HTTP
+  Response Extension to the Network Traffic SCO.
+* [TODO] create example of an SDO Extension for Jason Kierstead's
+  Assertion Extension to Observed Data and Indicator.
 
 # The SEP registry
 The idea is that if you receive a custom object prefixed with
