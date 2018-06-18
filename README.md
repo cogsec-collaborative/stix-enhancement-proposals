@@ -60,7 +60,7 @@ vendor-specific implementations they are not interoperable.
    against this git repo.
 10. ...profit!
 
-## An example, plus how the hell this is supposed to work...
+## An example
 If you look under `seps/draft/sdos/x-oasis-cti-tc-grouping/` you'll
 see the Grouping proposal (taken from the STIX 2.1-Working Concepts
 Google Doc) defined as a SEP. There's Markdown (for the humans) and
