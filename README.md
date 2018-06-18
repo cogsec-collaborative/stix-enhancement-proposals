@@ -24,9 +24,13 @@ specifications to be finalized. STIX2 has support for custom objects
 and properties, but while these are sufficient to address the needs of
 vendor-specific implementations they are not interoperable.
 
+## Definitions
+* **SDO:** STIX Domain Object, used to characterize CTI as nodes in the STIX graph model. 
+* **SCO:** STIX Cyber Observable, used to characterize observations within a STIX Observed Data SDO.
+
 # Scope
-* Defining new STIX SDOs as SEPs
-* Defining new STIX Cyber Observables (SCOs) as SEPs
+* [Defining new STIX SDOs as SEPs](#seps-for-new-sdos)
+* [Defining new STIX Cyber Observables (SCOs) as SEPs](#seps-for-new-scos)
 * Defining named sets of custom properties to add functionality to
   existing STIX SDOs and SCOs (as in, specified in a CSD or CS) as
   SEPs
