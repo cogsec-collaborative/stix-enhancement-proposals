@@ -19,6 +19,14 @@
           "title": "id",
           "pattern": "^x-oasis-cti-tc-silver-bullet--"
         },
+        "name": {
+          "type": "string",
+          "description": "The name used to identify the Silver Bullet."
+        },
+        "description": {
+          "type": "string",
+          "description": "A description that provides more details and context about the Silver Bullet, including the major world problem it solves and how that's supposed to work in reality."
+        },
         "aliases": {
           "type": "array",
           "description": "Alternative names used to identify this Silver Bullet.",
@@ -39,6 +47,6 @@
     }
   ],
   "required": [
-    "world_problem_solved"
+    "name"
   ]
 }
