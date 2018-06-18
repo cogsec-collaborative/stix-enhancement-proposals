@@ -22,11 +22,11 @@ Org | Primary Contact
 Mitre | Ivan Kirillov
 New Context | Trey Darley
 
-## SEP Definition
-Draft normative text goes here
-
 ## POC Implementations
 Org | GitHub Repository
 --- | -----------------
 Mitre | https://github.com/mitre-cti-tc-silver-bullet
 New Context | https://github.com/new-context-cti-tc-silver-bullet
+
+## SEP Definition
+Draft normative text goes here
