@@ -76,18 +76,18 @@ this can be achieved by referencing an Artifact SCO via the
 #### Hacked Website redirecting to exploit site using Javascript
 ```json
 {
-    "0": {
-    "type": "url",
-    "value": "https://mymainnews.com/news/index.html"
-    },
-    "1": {
-    "type": "x-oasis-cti-tc-webpage",
-    "url_ref" "0",
-    "body": [
-        "&lt;script src=\\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js\\" type=\\"text/javascript\\"&gt;&lt;/script&gt;\\"",
-        "&lt;script src=\\"*https://myhackedsite.com/files/uploads/d.js\\" type=\\"text/javascript\\"&gt;&lt;/script&gt;\\""
+	"0": {
+		"type": "url",
+		"value": "https://mymainnews.com/news/index.html"
+	},
+	"1": {
+		"type": "x-oasis-cti-tc-webpage",
+		"url_ref": "0",
+		"body": [
+			"&lt;script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\"",
+			"&lt;script src=\"https://myhackedsite.com/files/uploads/d.js\" type=\"text/javascript\"&gt;&lt;/script&gt;\""
 		]
-    }
+	}
 }
 ```
 
