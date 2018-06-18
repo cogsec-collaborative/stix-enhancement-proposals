@@ -62,6 +62,31 @@ see the Grouping proposal (taken from the STIX 2.1-Working Concepts
 Google Doc) defined as a SEP. There's Markdown (for the humans) and
 JSON Schema (for the machines.)
 
+# SEPs for new SCOs
+1. Fork this repository.
+2. Give your SEP a name and create a corresponding directory
+   within `seps/draft/scos/`.
+3. Copy `templates/sco_sep_template/template.md` and
+   `templates/sco_sep_template/template.json` into the directory
+   you just created (s/template/your SEP name).
+4. Start by filling out as much as you can of <your SEP name>.md.
+5. Ping the CTI TC via Slack on the #general channel to let folks know
+   what you're working on and where to find it.
+6. Create a dedicate CTI TC Slack channel for collaboration.
+7. Define the object's schema in <your SEP name>.json
+8. Rinse and repeat on Slack and minigroup working calls until you
+   feel the work is ready to be presented to the wider CTI TC.
+9. Barring substantive objections by the CTI TC, do a pull request
+   against this git repo.
+10. ...profit!
+
+## An example
+If you look under `seps/draft/scos/x-oasis-cti-tc-webpage/` you'll see
+the Webpage proposal (based on Terry MacDonald's proposal to the TC
+mailing list) defined as a SEP. There's Markdown (for the humans) and
+JSON Schema (for the machines.)
+
+# The SEP registry
 The idea is that if you receive a custom object prefixed with
 `x-oasis-cti-tc-*`, then you know to look in `manifest.md` to figure
 out what type of SEP it is, where to find the associate descriptive
@@ -75,7 +100,7 @@ commit SHA1 hash).
 * `deprecated`: for SEPs which have been EOL'ed or withdrawn
 
 # TODO
-- [ ] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)
+- [X] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)
 - [ ] figure out how to handle SEPs that add new properties or sets of
       properties to existing SDOs and SCOs
 - [ ] talk through the draft, active, and deprecated statuses - does
