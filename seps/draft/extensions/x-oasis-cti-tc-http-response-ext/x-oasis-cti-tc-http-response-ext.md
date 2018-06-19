@@ -14,7 +14,7 @@ returned.
 
 ## SEP Extension Context
 * Extends the Network Traffic SCO. Mainly intended to be used in
-  conjunction with the [`x-oasis-cti-tc-webpage` SCO](../../scos/x-oasis-cti-tc-webpage).
+  conjunction with the [`x-oasis-cti-tc-webpage`](../../scos/x-oasis-cti-tc-webpage) SCO.
 
 ## SEP Slack Channel
 #http-response-extension-dev
