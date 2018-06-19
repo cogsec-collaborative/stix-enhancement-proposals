@@ -13,6 +13,9 @@ This SEP is the silver bullet for solving all the world's problems.
 * Mitigating the effects of climate change.
 * Safeguarding the rights of the oppressed.
 
+## SEP Extension Context
+* Are there SEP Extensions typically used in context with this SEP SCO?
+
 ## SEP Slack Channel
 #silver-bullet-dev
 

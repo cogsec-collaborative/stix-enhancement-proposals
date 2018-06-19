@@ -4,10 +4,6 @@ Quantum Cyber Blockchain Fairydust Silver Bullet Extension
 ## SEP Identifier
 `x-oasis-cti-tc-silver-bullet`
 
-## SEP Extension Context
-* SDO or SCO?
-* all or a constrained set?
-
 ## SEP Description
 This SEP is the silver bullet for solving all the world's problems,
 packaged neatly as a STIX Extension.
@@ -17,6 +13,10 @@ packaged neatly as a STIX Extension.
 * Eliminating corruption.
 * Mitigating the effects of climate change.
 * Safeguarding the rights of the oppressed.
+
+## SEP Extension Context
+* SDO or SCO?
+* all or a constrained set?
 
 ## SEP Slack Channel
 #silver-bullet-dev
