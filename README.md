@@ -85,10 +85,11 @@ JSON Schema (for the machines.)
 10. ...profit!
 
 ## An example
-If you look under `seps/draft/scos/x-oasis-cti-tc-webpage/` you'll see
-the Webpage proposal (based on Terry MacDonald's proposal to the TC
-mailing list) defined as a SEP. There's Markdown (for the humans) and
-JSON Schema (for the machines.)
+If you look under
+[`seps/draft/scos/x-oasis-cti-tc-webpage/`](seps/draft/scos/x-oasis-cti-tc-webpage/)
+you'll see the Webpage proposal (based on Terry MacDonald's proposal
+to the TC mailing list) defined as a SEP. There's Markdown (for the
+humans) and JSON Schema (for the machines.)
 
 # SEPs for new Extensions
 * [TODO] create example of an SCO Extension for Terry MacDonald's HTTP
