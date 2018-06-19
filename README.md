@@ -97,10 +97,40 @@ to the TC mailing list) defined as a SEP. There's Markdown (for the
 humans) and JSON Schema (for the machines.)
 
 # SEPs for new Extensions
-* [TODO] create example of an SCO Extension for Terry MacDonald's HTTP
-  Response Extension to the Network Traffic SCO.
-* [TODO] create example of an SDO Extension for Jason Kierstead's
-  Assertion Extension to Observed Data and Indicator.
+1. Fork this repository.
+2. Give your SEP a name and create a corresponding directory
+   within [`seps/draft/extensions/`](seps/draft/extensions/).
+3. Copy
+   [`templates/extension_sep_template/template.md`](templates/extension_sep_template/template.md)
+   and
+   [`templates/extension_sep_template/template.json`](templates/extension_sep_template/template.json)
+   into the directory you just created (s/template/your SEP name).
+4. Start by filling out as much as you can of <your SEP name>.md.
+5. Ping the CTI TC via Slack on the #general channel to let folks know
+   what you're working on and where to find it.
+6. Create a dedicate CTI TC Slack channel for collaboration.
+7. Define the object's schema in <your SEP name>.json
+8. Rinse and repeat on Slack and minigroup working calls until you
+   feel the work is ready to be presented to the wider CTI TC.
+9. Barring substantive objections by the CTI TC, do a pull request
+   against this git repo.
+10. ...profit!
+
+## Examples
+* If you look under
+  [`seps/draft/extensions/x-oasis-cti-tc-http-response-ext/`](seps/draft/extensions/x-oasis-cti-tc-http-response-ext/)
+  you'll see the HTTP Response (SCO) Extension (based on Terry
+  MacDonald's proposal to the TC mailing list) defined as a
+  SEP. There's Markdown (for the humans) and there will be JSON Schema
+  (for the machines) just as soon as I get a few minutes.
+
+* If you look under
+  [`seps/draft/extensions/x-oasis-cti-tc-assertion-ext/`](seps/draft/extensions/x-oasis-cti-tc-assertion-ext/)
+  you'll see the STIX Assertion Proposal reimagined as an SDO
+  Extension (based on Jason Kierstead's proposal in STIX 2.1-Working
+  Concepts) and defined as a SEP. There's Markdown (for the humans)
+  and there will be JSON Schema (for the machines) just as soon as I
+  get a few minutes.
 
 # The SEP registry
 The idea is that if you receive a custom object prefixed with
@@ -117,7 +147,7 @@ the latest version (based on the git commit SHA1 hash).
 
 # TODO
 - [X] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)
-- [ ] figure out how to handle SEPs that add new properties or sets of
+- [X] figure out how to handle SEPs that add new properties or sets of
       properties to existing SDOs and SCOs
 - [ ] talk through the draft, active, and deprecated statuses - does
       the minigroup/bleeding-edge work happen in `draft` on a fork,
@@ -126,3 +156,5 @@ the latest version (based on the git commit SHA1 hash).
 - [ ] what about non-TC members - if they all sign the CLA and do a
       PR, can we incorporate their work into a CSD?
 - [ ] add workflow diagram
+- [ ] define JSON schema for x-oasis-cti-tc-assertion-ext.md
+- [ ] define JSON schema for x-oasis-cti-tc-http-response-ext.md
