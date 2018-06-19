@@ -55,7 +55,7 @@ vendor-specific implementations they are not interoperable.
 5. Ping the CTI TC via Slack on the #general channel to let folks know
    what you're working on and where to find it.
 6. Create a dedicate CTI TC Slack channel for collaboration.
-7. Define the object's schema in <your SEP name>.json
+7. Define the object's schema in \<your SEP name\>.json
 8. Rinse and repeat on Slack and minigroup working calls until you
    feel the work is ready to be presented to the wider CTI TC.
 9. Barring substantive objections by the CTI TC, do a pull request
@@ -78,11 +78,11 @@ humans) and JSON Schema (for the machines.)
    and
    [`templates/sco_sep_template/template.json`](templates/sco_sep_template/template.json)
    into the directory you just created (s/template/your SEP name).
-4. Start by filling out as much as you can of <your SEP name>.md.
+4. Start by filling out as much as you can of \<your SEP name\>.md.
 5. Ping the CTI TC via Slack on the #general channel to let folks know
    what you're working on and where to find it.
 6. Create a dedicate CTI TC Slack channel for collaboration.
-7. Define the object's schema in <your SEP name>.json
+7. Define the object's schema in \<your SEP name\>.json
 8. Rinse and repeat on Slack and minigroup working calls until you
    feel the work is ready to be presented to the wider CTI TC.
 9. Barring substantive objections by the CTI TC, do a pull request
@@ -105,11 +105,11 @@ humans) and JSON Schema (for the machines.)
    and
    [`templates/extension_sep_template/template.json`](templates/extension_sep_template/template.json)
    into the directory you just created (s/template/your SEP name).
-4. Start by filling out as much as you can of <your SEP name>.md.
+4. Start by filling out as much as you can of \<your SEP name\>.md.
 5. Ping the CTI TC via Slack on the #general channel to let folks know
    what you're working on and where to find it.
 6. Create a dedicate CTI TC Slack channel for collaboration.
-7. Define the object's schema in <your SEP name>.json
+7. Define the object's schema in \<your SEP name\>.json
 8. Rinse and repeat on Slack and minigroup working calls until you
    feel the work is ready to be presented to the wider CTI TC.
 9. Barring substantive objections by the CTI TC, do a pull request
