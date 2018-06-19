@@ -20,6 +20,9 @@ useful information, such as:
 * Recording a web defacement
 * Recording changes to a webpage over time
 
+## SEP Extension Context
+* Often used in conjunction with the [`x-oasis-cti-tc-http-response-ext` Extension](../extensions/x-oasis-cti-tc-http-response-ext/).
+
 ## SEP Slack Channel
 #webpage-dev
 

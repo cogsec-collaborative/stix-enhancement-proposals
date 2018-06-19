@@ -4,10 +4,6 @@ HTTP Response Extension
 ## SEP Identifier
 `x-oasis-cti-tc-http-response-ext`
 
-## SEP Extension Context
-* Extends the Network Traffic SCO. Mainly intended to be used in
-  conjunction with the `x-oasis-cti-tc-webpage` SCO. 
-
 ## SEP Description
 Allows for characterizing HTTP responses to capture things like HTTP
 redirects and to link HTTP requests with the webpage content that gets
@@ -15,6 +11,10 @@ returned.
 
 ## SEP Use Cases
 * Characterizing HTTP responses in Network Traffic.
+
+## SEP Extension Context
+* Extends the Network Traffic SCO. Mainly intended to be used in
+  conjunction with the [`x-oasis-cti-tc-webpage` SCO](../scos/x-oasis-cti-tc-webpage).
 
 ## SEP Slack Channel
 #http-response-extension-dev
