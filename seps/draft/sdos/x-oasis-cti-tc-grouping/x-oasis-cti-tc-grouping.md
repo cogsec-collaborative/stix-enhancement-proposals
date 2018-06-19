@@ -49,12 +49,12 @@ New Context | https://github.com/...
 | **context** (required)     | `open-vocab`                | A description that provides more details and context about the Grouping, potentially including its purpose and its key characteristics. <br /> This is an open vocabulary and values **SHOULD** come from the `grouping-context-ov` vocabulary. |
 | **object_refs** (optional) | `list` of type `identifier` | Specifies the STIX Objects that are referred to by this Grouping.                                                                                                                                                                               |
 
-### ​Relationships
+### Relationships
 There are no Grouping-specific SROs defined. The usual embedded
 references defined in SDO Common Properties (`created_by_ref`, etc)
 apply to Grouping. The Grouping object's `object_refs` property allows embedding references to the STIX Objects related to a Grouping instance.
-​
-### ​Vocabularies
+
+### Vocabularies
 
 #### Grouping Context
 **Vocabulary Name:** `grouping-context-ov`
