@@ -2,7 +2,7 @@
 Quantum Cyber Blockchain Fairydust Silver Bullet Extension
 
 ## SEP Identifier
-`x-oasis-cti-tc-silver-bullet`
+`x-oasis-cti-tc-silver-bullet-ext`
 
 ## SEP Description
 This SEP is the silver bullet for solving all the world's problems,
