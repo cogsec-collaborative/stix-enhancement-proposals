@@ -22,14 +22,43 @@ This SEP is the silver bullet for solving all the world's problems.
 ## SEP Sponsors
 Org | Primary Contact
 --- | ---------------
-Mitre | Ivan Kirillov
-New Context | Trey Darley
+example.com | John Smith
+Another Company | Taro Tanaka
 
 ## SEP Definition
 Draft normative text goes here
 
+### Properties
+
+| Property Name              | Type                        | Description                         |
+| -------------              | ----                        | -----------                         |
+| **name** (required)        | `string`                    | A name used to identify the QCBFSB. |
+
+### Relationships
+There are no QCBFSB-specific SROs defined. The usual embedded
+references defined in SDO Common Properties (`created_by_ref`, etc)
+apply to QCBFSB.
+
+### Vocabularies
+
+#### Bogus Vocab
+**Vocabulary Name:** `bogus-vocab-ov`
+
+Description of vocab.
+
+| Vocabulary Value      | Description                                  |
+| -------------------   | -----------                                  |
+| `qkd`                 | Gotta let the QCBFSB exchange keys, right?   |
+
+### Examples
+
+#### First Example
+```json
+{ "name": "invalid object" }
+```
+
 ## POC Implementations
 Org | GitHub Repository
 --- | -----------------
-Mitre | https://github.com/mitre-cti-tc-silver-bullet
-New Context | https://github.com/new-context-cti-tc-silver-bullet
+example.com | https://github.com/example/test
+Another Company | https://ac.example.com/qcbfsb-proposal.git
