@@ -63,8 +63,7 @@ New Context | https://github.com/...
     "pattern": "[network-traffic:dst_ref.type = 'ipv4-addr' AND network-traffic:dst_ref.value = '54.72.9.51/32']",
     "valid_from": "2016-01-01T00:00:00Z",
     "extensions": {
-        "x-oasis-cti-tc-assertion-ext": {
-		    [
+        "x-oasis-cti-tc-assertion-ext": [
 			    {
                     "categories": ["anonymization"],
                     "threat_level": 80,
@@ -75,8 +74,7 @@ New Context | https://github.com/...
                     "threat_level": 20,
                     "source": "Foobar Inc."
                 }
-			]
-		}
+		]
 	}
 }
 ```
