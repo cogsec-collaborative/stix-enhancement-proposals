@@ -45,10 +45,12 @@ vendor-specific implementations they are not interoperable.
 # SEPs for new SDOs
 1. Fork this repository.
 2. Give your SEP a name and create a corresponding directory
-   within `seps/draft/sdos/`.
-3. Copy `templates/sdo_sep_template/template.md` and
-   `templates/sdo_sep_template/template.json` into the directory
-   you just created (s/template/your SEP name).
+   within [`seps/draft/sdos/`](seps/draft/sdos/).
+3. Copy
+   [`templates/sdo_sep_template/template.md`](templates/sdo_sep_template/template.md)
+   and
+   [`templates/sdo_sep_template/template.json`](templates/sdo_sep_template/template.json)
+   into the directory you just created (s/template/your SEP name).
 4. Start by filling out as much as you can of <your SEP name>.md.
 5. Ping the CTI TC via Slack on the #general channel to let folks know
    what you're working on and where to find it.
@@ -61,18 +63,21 @@ vendor-specific implementations they are not interoperable.
 10. ...profit!
 
 ## An example
-If you look under `seps/draft/sdos/x-oasis-cti-tc-grouping/` you'll
-see the Grouping proposal (taken from the STIX 2.1-Working Concepts
-Google Doc) defined as a SEP. There's Markdown (for the humans) and
-JSON Schema (for the machines.)
+If you look under
+[`seps/draft/sdos/x-oasis-cti-tc-grouping/`](seps/draft/sdos/x-oasis-cti-tc-grouping/)
+you'll see the Grouping proposal (taken from the STIX 2.1-Working
+Concepts Google Doc) defined as a SEP. There's Markdown (for the
+humans) and JSON Schema (for the machines.)
 
 # SEPs for new SCOs
 1. Fork this repository.
 2. Give your SEP a name and create a corresponding directory
-   within `seps/draft/scos/`.
-3. Copy `templates/sco_sep_template/template.md` and
-   `templates/sco_sep_template/template.json` into the directory
-   you just created (s/template/your SEP name).
+   within [`seps/draft/scos/`](seps/draft/scos/).
+3. Copy
+   [`templates/sco_sep_template/template.md`](templates/sco_sep_template/template.md)
+   and
+   [`templates/sco_sep_template/template.json`](templates/sco_sep_template/template.json)
+   into the directory you just created (s/template/your SEP name).
 4. Start by filling out as much as you can of <your SEP name>.md.
 5. Ping the CTI TC via Slack on the #general channel to let folks know
    what you're working on and where to find it.
