@@ -51,7 +51,7 @@ vendor-specific implementations they are not interoperable.
    and
    [`templates/sdo_sep_template/template.json`](templates/sdo_sep_template/template.json)
    into the directory you just created (s/template/your SEP name).
-4. Start by filling out as much as you can of <your SEP name>.md.
+4. Start by filling out as much as you can of \<your SEP name\>.md.
 5. Ping the CTI TC via Slack on the #general channel to let folks know
    what you're working on and where to find it.
 6. Create a dedicate CTI TC Slack channel for collaboration.
