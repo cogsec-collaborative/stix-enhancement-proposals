@@ -104,10 +104,10 @@ humans) and JSON Schema (for the machines.)
 
 # The SEP registry
 The idea is that if you receive a custom object prefixed with
-`x-oasis-cti-tc-*`, then you know to look in `manifest.md` to figure
-out what type of SEP it is, where to find the associate descriptive
-text and schema, as well as the latest version (based on the git
-commit SHA1 hash).
+`x-oasis-cti-tc-*`, then you know to look in
+[`manifest.md`](manifest.md) to figure out what type of SEP it is,
+where to find the associate descriptive text and schema, as well as
+the latest version (based on the git commit SHA1 hash).
 
 # SEP statuses
 * `draft`: for immature/bleeding-edge SEPs
