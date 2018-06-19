@@ -86,7 +86,7 @@ JSON Schema (for the machines.)
 
 ## An example
 If you look under
-[seps/draft/scos/x-oasis-cti-tc-webpage/](seps/draft/scos/x-oasis-cti-tc-webpage/)
+[`seps/draft/scos/x-oasis-cti-tc-webpage/`](seps/draft/scos/x-oasis-cti-tc-webpage/)
 you'll see the Webpage proposal (based on Terry MacDonald's proposal
 to the TC mailing list) defined as a SEP. There's Markdown (for the
 humans) and JSON Schema (for the machines.)
