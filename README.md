@@ -144,6 +144,8 @@ the latest version (based on the git commit SHA1 hash).
 * `active`: for SEPs that are actually in production use and done
   enough to be debated for inclusion in a CSD
 * `deprecated`: for SEPs which have been EOL'ed or withdrawn
+* `integrated`: for SEPs which have been EOL'ed due to having been
+  published in a CSD
 
 # TODO
 - [X] finish example for SCO SEPS (a la x-oasis-cti-tc-grouping)

@@ -80,12 +80,6 @@ the pending-verification value. That value indicates that the
 information contained in the Grouping is still pending verification
 and consumers should treat it as such.
 
-| **Vocabulary Summary** |
-|------------------------|
-| pending-verification   |
-| **Vocabulary Value**   |
-| pending-verification   |
-
 | Vocabulary Value       | Description                                                                                                                                                                             |
 | -------------------    | -----------                                                                                                                                                                             |
 | `pending-verification` | The Report contains an initial analysis. Information should be considered preliminary and is subject to change as additional data collection, investigation, and analysis is performed. |

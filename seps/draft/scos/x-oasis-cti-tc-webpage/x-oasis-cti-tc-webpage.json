@@ -21,14 +21,14 @@
 		},
 		"head": {
 		    "type": "array",
-		    "description": "Specifies a​list of type string where each list item contains HTML excerpts from the head element of the HTML content.",
+		    "description": "Specifies alist of type string where each list item contains HTML excerpts from the head element of the HTML content.",
 		    "items": {
 			"type": "string"
 		    }
 		},
 		"body": {
 		    "type": "array",
-		    "description": "Specifies a​list of type string where each list item contains HTML excerpts from the body element of the HTML content.",
+		    "description": "Specifies alist of type string where each list item contains HTML excerpts from the body element of the HTML content.",
 		    "items": {
 			"type": "string"
 		    }
