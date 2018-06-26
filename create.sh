@@ -29,6 +29,11 @@ src="templates/${type}_sep_template"
 bname="x-${org}-${name}"
 dst="seps/draft/${type}s/${bname}"
 
+if [ x"${bname}" != x"${bname##*/}" ]; then
+	echo "Error: Neither org nor name may have a slash in them."
+	exit 3
+fi
+
 if ! mkdir "$dst"; then
 	echo "Error: This combination already exists:"
 	echo "${dst}"
@@ -36,7 +41,9 @@ if ! mkdir "$dst"; then
 fi
 
 for i in json md; do
-	cp "${src}/template.$i" "${dst}/${bname}.$i"
+	out="${dst}/${bname}.$i"
+	cp "${src}/template.$i" "${out}"
+	sed -i '' -e "s/x-oasis-cti-tc-silver-bullet/${bname}/g" "${out}"
 done
 
 echo "Directory $dst created."
