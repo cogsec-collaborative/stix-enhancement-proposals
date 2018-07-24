@@ -25,11 +25,11 @@ and properties, but while these are sufficient to address the needs of
 vendor-specific implementations they are not interoperable.
 
 ## Definitions
-* **SDO:** STIX Domain Object, used to characterize CTI as nodes in
+* **SDO:** A STIX Domain Object, used to characterize CTI as nodes in
   the STIX graph model.
-* **SCO:** STIX Cyber Observable, used to characterize observations
+* **SCO:** A STIX Cyber Observable, used to characterize observations
   within a STIX Observed Data SDO.
-* **STIX Extensions:** STIX Extensions define coherent sets of
+* **STIX Extension:** A STIX Extension defines a coherent set of
   properties to add additional capabilities to SDOs or SCOs. These may
   be logically constrained to certain SDO or SCO types where
   semantically it would be nonsensical outside a limited context. For
@@ -37,10 +37,10 @@ vendor-specific implementations they are not interoperable.
   context of a Network Traffic SCO, but would not in the case of a
   File SCO.
 
-# Scope
-* [Defining new STIX SDOs as SEPs](#seps-for-new-sdos)
-* [Defining new STIX Cyber Observables (SCOs) as SEPs](#seps-for-new-scos)
-* [Defining new STIX Extensions](#seps-for-new-extensions)
+# Howto:
+* [Process for defining new STIX SDOs as SEPs](#seps-for-new-sdos)
+* [Process for defining new STIX Cyber Observables (SCOs) as SEPs](#seps-for-new-scos)
+* [Process for defining new STIX Extensions as SEPs](#seps-for-new-extensions)
 
 # SEPs for new SDOs
 1. Fork this repository.
@@ -96,7 +96,7 @@ you'll see the Webpage proposal (based on Terry MacDonald's proposal
 to the TC mailing list) defined as a SEP. There's Markdown (for the
 humans) and JSON Schema (for the machines.)
 
-# SEPs for new Extensions
+# SEPs for new STIX Extensions (SDO or SCO)
 1. Fork this repository.
 2. Give your SEP a name and create a corresponding directory
    within [`seps/draft/extensions/`](seps/draft/extensions/).
