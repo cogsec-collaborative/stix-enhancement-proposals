@@ -40,7 +40,7 @@ vendor-specific implementations they are not interoperable.
 # Howto:
 * [Process for defining new STIX SDOs as SEPs](#seps-for-new-sdos)
 * [Process for defining new STIX Cyber Observables (SCOs) as SEPs](#seps-for-new-scos)
-* [Process for defining new STIX Extensions as SEPs](#seps-for-new-extensions)
+* [Process for defining new STIX Extensions as SEPs](#seps-for-new-stix-extensions-sdo-or-sco)
 
 # SEPs for new SDOs
 1. Fork this repository.
